@@ -7,7 +7,18 @@
 \usepackage{graphicx}
 \usepackage{epstopdf}
 \usepackage{scrextend}
+\usepackage{hyperref}
 %\usepackage[document]{ragged2e}
+
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=magenta,      
+	urlcolor=cyan,
+	pdftitle={Sharelatex Example},
+	bookmarks=true,
+	%pdfpagemode=FullScreen,
+}
 
 \makeatletter
 \renewcommand{\@seccntformat}[1]{\csname the#1\endcsname.\quad}
@@ -24,11 +35,11 @@
 
 \pagenumbering{roman}
 \tableofcontents
-\newpage
 
 \pagenumbering{arabic}
-\section{Light bar problem (problem 2.7.27 from Savchenko 2008 edition)}
-\paragraph{}
+\newpage
+\section{Light bar problem}
+\paragraph{Problem 2.7.27 from Savchenko 2008 edition.\\}
 A light bar with m1 and m2 masses $(m_1 \neq m_2)$ at the ends placed on the support point (in the middle of  bar). Initially it is held in this position. Then it's released.
 What is the force N which acts on a support point at the moment just after system is released?
 
@@ -53,5 +64,8 @@ $$F=(m_1+m_2)g-N$$
 Assume $m_2>m_1$ and center of mass is at distance $x$ from support point. Then: $$x=\frac {l(m_2-m_1)} {2(m_1+m_2)}$$
 Finally: $$N=(m_1+m_2)g-F=...=\frac {4m_1m_2g} {m_1+m_2}$$
 \end{addmargin}
+
+\section{Problem 2}
+Let's figure it out
 
 \end{document}
